@@ -29,9 +29,11 @@ jobs:
         run: |
           mkdir -p docs
           cp data.txt docs/
+
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: 'docs/data.txt'
-          message: 'Update data.txt'
-          branch: main
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/data.txt
+          git commit -m "Update data.txt"
+          git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
