@@ -1,0 +1,31 @@
+name: Run Python Script
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight (UTC)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install cloudscraper beautifulsoup4
+
+      - name: Run script
+        run: |
+          python script.py
+
+      - name: Upload file to GitHub Pages
+        uses: actions/upload-artifact@v3
+        with:
+          name: public-file
+          path: data.txt
