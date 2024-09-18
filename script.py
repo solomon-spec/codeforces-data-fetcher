@@ -1,5 +1,6 @@
 import cloudscraper
 from bs4 import BeautifulSoup
+import json
 
 def fetch_last_page_number(base_url):
     """
