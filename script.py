@@ -72,6 +72,7 @@ def fetch_problem_data(page_number):
 def main():
     base_url = 'https://codeforces.com/problemset'
     last_page_number = fetch_last_page_number(base_url)
+    last_page_number = 5
 
     all_problems = []
     for page in range(1, last_page_number + 1):
