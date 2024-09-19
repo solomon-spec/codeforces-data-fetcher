@@ -114,7 +114,7 @@ def fetch_problems_concurrently(list_id, last_page_number):
     problems = {}
 
     # Create a ThreadPoolExecutor
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         # Submit tasks for each page
         future_to_page = {executor.submit(fetch_problem_data, page, list_id): page for page in range(1, last_page_number + 1)}
         
