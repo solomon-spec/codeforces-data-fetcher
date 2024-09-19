@@ -37,9 +37,17 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+      - name: Stash changes before pulling
+        run: |
+          git stash
+
       - name: Pull latest changes from main
         run: |
           git pull --rebase https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} main
+
+      - name: Apply stashed changes after pulling
+        run: |
+          git stash pop || echo "Nothing to apply from stash"
 
       - name: Commit and push changes
         run: |
