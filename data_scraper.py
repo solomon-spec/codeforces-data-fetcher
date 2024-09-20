@@ -25,6 +25,8 @@ def fetch_problem_data(page_number, list_id):
             continue
 
         if response.status_code == 200:
+            request_end_time = time.time()
+            parsing_start_time = time.time()
             soup = BeautifulSoup(response.text, 'html.parser')
             problems_table = soup.find('table', class_='problems')
 
