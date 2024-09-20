@@ -8,12 +8,12 @@ import requests
 
 
 
-# proxies = ['Tikursew:Letmeknow@89.40.223.8:6044', 'Tikursew:Letmeknow@103.75.229.130:5878', 'Tikursew:Letmeknow@23.236.222.216:7247', 'Tikursew:Letmeknow@64.137.70.78:5629', 'Tikursew:Letmeknow@64.137.31.27:6641', 'Tikursew:Letmeknow@64.137.31.61:6675', 'Tikursew:Letmeknow@185.118.6.31:5747', 'Tikursew:Letmeknow@64.137.96.206:6773', 'Tikursew:Letmeknow@104.238.7.145:6072', 'Tikursew:Letmeknow@64.137.106.77:6570', 'Tikursew:Letmeknow@103.37.180.224:6618', 'Tikursew:Letmeknow@103.101.90.3:6268', 'Tikursew:Letmeknow@104.239.90.74:6465', 'Tikursew:Letmeknow@64.137.66.208:5793', 'Tikursew:Letmeknow@64.137.49.132:6673', 'Tikursew:Letmeknow@104.239.0.234:5935', 'Tikursew:Letmeknow@102.212.88.180:6177', 'Tikursew:Letmeknow@172.84.183.177:5737', 'Tikursew:Letmeknow@64.137.121.144:6399', 'Tikursew:Letmeknow@103.75.229.37:5785', 'Tikursew:Letmeknow@89.40.222.95:6471', 'Tikursew:Letmeknow@64.137.14.212:5878', 'Tikursew:Letmeknow@91.123.9.208:6750', 'Tikursew:Letmeknow@91.212.74.152:6518', 'Tikursew:Letmeknow@45.252.58.153:6782', 'Tikursew:Letmeknow@45.131.102.151:5803', 'Tikursew:Letmeknow@103.80.10.244:6522', 'Tikursew:Letmeknow@104.250.200.178:6428', 'Tikursew:Letmeknow@64.137.126.6:6614', 'Tikursew:Letmeknow@104.239.5.8:6662', 'Tikursew:Letmeknow@64.137.126.62:6670', 'Tikursew:Letmeknow@91.217.72.136:6865', 'Tikursew:Letmeknow@104.239.86.130:6040', 'Tikursew:Letmeknow@45.252.57.75:6520', 'Tikursew:Letmeknow@84.33.210.139:6073', 'Tikursew:Letmeknow@89.43.32.113:5941', 'Tikursew:Letmeknow@138.128.145.159:6078', 'Tikursew:Letmeknow@45.41.169.79:6740', 'Tikursew:Letmeknow@92.112.228.54:6135', 'Tikursew:Letmeknow@45.41.172.133:5876', 'Tikursew:Letmeknow@216.158.205.79:6307', 'Tikursew:Letmeknow@104.222.167.36:6438', 'Tikursew:Letmeknow@43.228.237.144:6090', 'Tikursew:Letmeknow@64.137.93.87:6544', 'Tikursew:Letmeknow@104.239.53.53:7471', 'Tikursew:Letmeknow@23.229.126.171:7700', 'Tikursew:Letmeknow@64.137.108.48:5641', 'Tikursew:Letmeknow@104.239.7.110:6514', 'Tikursew:Letmeknow@104.239.19.126:6803', 'Tikursew:Letmeknow@85.198.45.70:5994', 'Tikursew:Letmeknow@216.173.79.16:6422', 'Tikursew:Letmeknow@89.35.80.151:6806', 'Tikursew:Letmeknow@209.99.134.249:5945', 'Tikursew:Letmeknow@103.75.229.221:5969', 'Tikursew:Letmeknow@104.239.10.158:5829', 'Tikursew:Letmeknow@103.114.58.132:6553', 'Tikursew:Letmeknow@104.233.19.38:5710', 'Tikursew:Letmeknow@94.101.99.2:5551', 'Tikursew:Letmeknow@91.123.11.100:6366', 'Tikursew:Letmeknow@92.119.182.17:6662', 'Tikursew:Letmeknow@64.137.121.7:6262', 'Tikursew:Letmeknow@104.143.244.113:6061', 'Tikursew:Letmeknow@45.41.173.85:6452', 'Tikursew:Letmeknow@104.239.19.125:6802', 'Tikursew:Letmeknow@107.181.142.83:5676', 'Tikursew:Letmeknow@92.112.228.38:6119', 'Tikursew:Letmeknow@91.123.9.20:6562', 'Tikursew:Letmeknow@198.105.111.11:6689', 'Tikursew:Letmeknow@23.109.219.93:6317', 'Tikursew:Letmeknow@45.41.169.217:6878', 'Tikursew:Letmeknow@45.252.57.249:6694', 'Tikursew:Letmeknow@104.239.53.86:7504', 'Tikursew:Letmeknow@147.136.85.102:6018', 'Tikursew:Letmeknow@45.61.97.76:6602', 'Tikursew:Letmeknow@209.99.134.230:5926', 'Tikursew:Letmeknow@64.137.126.55:6663', 'Tikursew:Letmeknow@85.198.45.143:6067', 'Tikursew:Letmeknow@142.111.93.25:6586', 'Tikursew:Letmeknow@161.123.214.205:6560', 'Tikursew:Letmeknow@104.239.73.34:6577', 'Tikursew:Letmeknow@109.196.160.250:5996', 'Tikursew:Letmeknow@206.41.174.57:6012', 'Tikursew:Letmeknow@172.84.183.96:5656', 'Tikursew:Letmeknow@154.30.252.171:5302', 'Tikursew:Letmeknow@185.72.241.96:7388', 'Tikursew:Letmeknow@45.146.30.197:6701', 'Tikursew:Letmeknow@45.131.95.222:5886', 'Tikursew:Letmeknow@104.238.7.93:6020', 'Tikursew:Letmeknow@91.223.126.204:6816', 'Tikursew:Letmeknow@104.239.124.55:6333', 'Tikursew:Letmeknow@198.37.121.173:6593', 'Tikursew:Letmeknow@89.40.223.32:6068', 'Tikursew:Letmeknow@104.129.60.199:6631', 'Tikursew:Letmeknow@45.61.121.146:6745', 'Tikursew:Letmeknow@64.137.8.164:6846', 'Tikursew:Letmeknow@91.123.11.122:6388', 'Tikursew:Letmeknow@185.72.241.203:7495', 'Tikursew:Letmeknow@64.137.49.218:6759', 'Tikursew:Letmeknow@104.222.161.221:6353', 'Tikursew:Letmeknow@104.250.200.136:6386']
+proxies = ['Tikursew:Letmeknow@89.40.223.8:6044', 'Tikursew:Letmeknow@103.75.229.130:5878', 'Tikursew:Letmeknow@23.236.222.216:7247', 'Tikursew:Letmeknow@64.137.70.78:5629', 'Tikursew:Letmeknow@64.137.31.27:6641', 'Tikursew:Letmeknow@64.137.31.61:6675', 'Tikursew:Letmeknow@185.118.6.31:5747', 'Tikursew:Letmeknow@64.137.96.206:6773', 'Tikursew:Letmeknow@104.238.7.145:6072', 'Tikursew:Letmeknow@64.137.106.77:6570', 'Tikursew:Letmeknow@103.37.180.224:6618', 'Tikursew:Letmeknow@103.101.90.3:6268', 'Tikursew:Letmeknow@104.239.90.74:6465', 'Tikursew:Letmeknow@64.137.66.208:5793', 'Tikursew:Letmeknow@64.137.49.132:6673', 'Tikursew:Letmeknow@104.239.0.234:5935', 'Tikursew:Letmeknow@102.212.88.180:6177', 'Tikursew:Letmeknow@172.84.183.177:5737', 'Tikursew:Letmeknow@64.137.121.144:6399', 'Tikursew:Letmeknow@103.75.229.37:5785', 'Tikursew:Letmeknow@89.40.222.95:6471', 'Tikursew:Letmeknow@64.137.14.212:5878', 'Tikursew:Letmeknow@91.123.9.208:6750', 'Tikursew:Letmeknow@91.212.74.152:6518', 'Tikursew:Letmeknow@45.252.58.153:6782', 'Tikursew:Letmeknow@45.131.102.151:5803', 'Tikursew:Letmeknow@103.80.10.244:6522', 'Tikursew:Letmeknow@104.250.200.178:6428', 'Tikursew:Letmeknow@64.137.126.6:6614', 'Tikursew:Letmeknow@104.239.5.8:6662', 'Tikursew:Letmeknow@64.137.126.62:6670', 'Tikursew:Letmeknow@91.217.72.136:6865', 'Tikursew:Letmeknow@104.239.86.130:6040', 'Tikursew:Letmeknow@45.252.57.75:6520', 'Tikursew:Letmeknow@84.33.210.139:6073', 'Tikursew:Letmeknow@89.43.32.113:5941', 'Tikursew:Letmeknow@138.128.145.159:6078', 'Tikursew:Letmeknow@45.41.169.79:6740', 'Tikursew:Letmeknow@92.112.228.54:6135', 'Tikursew:Letmeknow@45.41.172.133:5876', 'Tikursew:Letmeknow@216.158.205.79:6307', 'Tikursew:Letmeknow@104.222.167.36:6438', 'Tikursew:Letmeknow@43.228.237.144:6090', 'Tikursew:Letmeknow@64.137.93.87:6544', 'Tikursew:Letmeknow@104.239.53.53:7471', 'Tikursew:Letmeknow@23.229.126.171:7700', 'Tikursew:Letmeknow@64.137.108.48:5641', 'Tikursew:Letmeknow@104.239.7.110:6514', 'Tikursew:Letmeknow@104.239.19.126:6803', 'Tikursew:Letmeknow@85.198.45.70:5994', 'Tikursew:Letmeknow@216.173.79.16:6422', 'Tikursew:Letmeknow@89.35.80.151:6806', 'Tikursew:Letmeknow@209.99.134.249:5945', 'Tikursew:Letmeknow@103.75.229.221:5969', 'Tikursew:Letmeknow@104.239.10.158:5829', 'Tikursew:Letmeknow@103.114.58.132:6553', 'Tikursew:Letmeknow@104.233.19.38:5710', 'Tikursew:Letmeknow@94.101.99.2:5551', 'Tikursew:Letmeknow@91.123.11.100:6366', 'Tikursew:Letmeknow@92.119.182.17:6662', 'Tikursew:Letmeknow@64.137.121.7:6262', 'Tikursew:Letmeknow@104.143.244.113:6061', 'Tikursew:Letmeknow@45.41.173.85:6452', 'Tikursew:Letmeknow@104.239.19.125:6802', 'Tikursew:Letmeknow@107.181.142.83:5676', 'Tikursew:Letmeknow@92.112.228.38:6119', 'Tikursew:Letmeknow@91.123.9.20:6562', 'Tikursew:Letmeknow@198.105.111.11:6689', 'Tikursew:Letmeknow@23.109.219.93:6317', 'Tikursew:Letmeknow@45.41.169.217:6878', 'Tikursew:Letmeknow@45.252.57.249:6694', 'Tikursew:Letmeknow@104.239.53.86:7504', 'Tikursew:Letmeknow@147.136.85.102:6018', 'Tikursew:Letmeknow@45.61.97.76:6602', 'Tikursew:Letmeknow@209.99.134.230:5926', 'Tikursew:Letmeknow@64.137.126.55:6663', 'Tikursew:Letmeknow@85.198.45.143:6067', 'Tikursew:Letmeknow@142.111.93.25:6586', 'Tikursew:Letmeknow@161.123.214.205:6560', 'Tikursew:Letmeknow@104.239.73.34:6577', 'Tikursew:Letmeknow@109.196.160.250:5996', 'Tikursew:Letmeknow@206.41.174.57:6012', 'Tikursew:Letmeknow@172.84.183.96:5656', 'Tikursew:Letmeknow@154.30.252.171:5302', 'Tikursew:Letmeknow@185.72.241.96:7388', 'Tikursew:Letmeknow@45.146.30.197:6701', 'Tikursew:Letmeknow@45.131.95.222:5886', 'Tikursew:Letmeknow@104.238.7.93:6020', 'Tikursew:Letmeknow@91.223.126.204:6816', 'Tikursew:Letmeknow@104.239.124.55:6333', 'Tikursew:Letmeknow@198.37.121.173:6593', 'Tikursew:Letmeknow@89.40.223.32:6068', 'Tikursew:Letmeknow@104.129.60.199:6631', 'Tikursew:Letmeknow@45.61.121.146:6745', 'Tikursew:Letmeknow@64.137.8.164:6846', 'Tikursew:Letmeknow@91.123.11.122:6388', 'Tikursew:Letmeknow@185.72.241.203:7495', 'Tikursew:Letmeknow@64.137.49.218:6759', 'Tikursew:Letmeknow@104.222.161.221:6353', 'Tikursew:Letmeknow@104.250.200.136:6386']
 
 # Function to rotate proxies
 def get_random_proxy(page_number):
     print(page_number)
-    return {"http://": proxies[page_number], "https://": proxies[page_number]}
+    return {"http": 'http://' + proxies[page_number], "https": 'http://' + proxies[page_number]}
 
 
 
@@ -21,10 +21,9 @@ def fetch_last_page_number(base_url):
     """
     Fetch the last page number from the Codeforces problemset pagination.
     """
-    scraper = cloudscraper.create_scraper()
-    
+    scraper = cloudscraper.create_scraper() 
     for attempt in range(2):
-        response = scraper.get(base_url)
+        response = scraper.get(base_url,proxies = get_random_proxy(7))
         if response.status_code == 403:
             print("403 Forbidden, retrying after 15 seconds...")
             time.sleep(15)
@@ -59,7 +58,8 @@ def fetch_problem_data(page_number, list_id):
     connect_timeout = 10  
     read_timeout = 30  
     for attempt in range(2):
-        response = scraper.get(page_url)
+        response = scraper.get(page_url,proxies=get_random_proxy(page_number))
+
 
         if response.status_code == 403:
             print("403 Forbidden, retrying after 15 seconds...")
@@ -114,7 +114,7 @@ def fetch_problems_concurrently(list_id, last_page_number):
     problems = {}
 
     # Create a ThreadPoolExecutor
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=98) as executor:
         # Submit tasks for each page
         future_to_page = {executor.submit(fetch_problem_data, page, list_id): page for page in range(1, last_page_number + 1)}
         
@@ -160,6 +160,8 @@ def main():
                 all_problems[problem_id]['Stats'].extend(problem_data['Stats'])
             else:
                 all_problems[problem_id] = problem_data
+        print(f"Processing list done: {list_id}")
+        time.sleep(60)
     
     # Save all the problems with unique IDs and list-specific stats to data.txt
     with open('data.txt', 'w') as file:
